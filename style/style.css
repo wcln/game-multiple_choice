@@ -1,0 +1,49 @@
+/* the game canvas */
+
+* {
+	font-family: 'Press Start 2P', "Lato", "Arial";
+}
+
+canvas {
+	border: 1px solid black;
+	background-color: black;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+}
+
+/* mute button */
+#mute img {
+	width: 16px;
+	height: 16px;
+}
+
+/* HTML elements overlayed on top of game canvas */
+#overlayed {
+	position: absolute;
+	z-index: 1;
+	top: 600px;
+	left: 225px;
+	right: 225px;
+	bottom: 0;
+	width: 160px;
+	height: 25px;
+	margin: auto;
+	background-color: blue;
+	border: 2px solid black;
+	padding: 15px;
+}
+
+#overlayed #container {
+	float: right;
+}
+
+/* the question p element */
+#question {
+	display: inline;
+	width: 30px;
+	color: white;
+}
