@@ -1,0 +1,37 @@
+{
+  "title": "Naming Types of Triangles",
+  "questions": [
+    {
+      "question": "This triangle has three equal sides: It is:",
+      "image": "1.png",
+      "answer": "an equilateral triangle",
+      "options": [
+        {
+          "option": "an isosceles triangle"
+        },
+        {
+          "option": "a scalene triangle"
+        },
+        {
+          "option": "a right-angled triangle"
+        }
+      ]
+    },
+    {
+      "question": "The length of all the sides of this triangle are different. It is:",
+      "image": "2.png",
+      "answer": "a scalene triangle",
+      "options": [
+        {
+          "option": "an isosceles triangle"
+        },
+        {
+          "option": "an equilateral triangle"
+        },
+        {
+          "option": "a right-angled triangle"
+        }
+      ]
+    }
+  ]
+}
