@@ -3,19 +3,15 @@
 <head>
 	<title>WCLN - Multiple Choice</title>
 	<meta charset="utf-8"/>
-	<!-- Latest compiled and minified CSS -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-	<!-- jQuery library -->
+	<link rel="stylesheet" href="https://bclearningnetwork.com/lib/bootstrap.min.css">
 	<script src="https://bclearningnetwork.com/lib/jquery/jquery-3.2.1.min.js"></script>
-	<!-- Latest compiled JavaScript -->
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Lato"><!-- google web font -->
+	<script src="https://bclearningnetwork.com/lib/bootstrap.min.js"></script>
 	<link rel="stylesheet" type="text/css" href="style/style.css"/>
 	<link rel="shortcut icon" href="images/favicon.ico"/>
 	<script type="text/javascript" src="helper.js"></script>
-	<script type="text/javascript" src="multiple_choice.js"></script><!-- the main game JS file -->
+	<script type="text/javascript" src="multiple_choice.js"></script>
 </head>
-<body onload="init('<?=isset($_GET['title'])?$_GET['title']:null?>');"><!-- body onload calls function to initialize game -->
+<body onload="init('<?=isset($_GET['title'])?$_GET['title']:null?>');">
 	<div class="container">
 		<div class="row" id="heading-bar">
 			<div class="col-sm-2">
