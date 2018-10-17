@@ -3,9 +3,9 @@
 <head>
 	<title>WCLN - Multiple Choice</title>
 	<meta charset="utf-8"/>
-	<link rel="stylesheet" href="https://bclearningnetwork.com/lib/bootstrap.min.css">
+	<link rel="stylesheet" href="https://bclearningnetwork.com/lib/bootstrap/bootstrap.min.css">
 	<script src="https://bclearningnetwork.com/lib/jquery/jquery-3.2.1.min.js"></script>
-	<script src="https://bclearningnetwork.com/lib/bootstrap.min.js"></script>
+	<script src="https://bclearningnetwork.com/lib/bootstrap/bootstrap.min.js"></script>
 	<link rel="stylesheet" type="text/css" href="style/style.css"/>
 	<link rel="shortcut icon" href="images/favicon.ico"/>
 	<script type="text/javascript" src="helper.js"></script>
