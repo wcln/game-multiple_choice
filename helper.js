@@ -39,6 +39,7 @@ function shuffle(a) {
 */
 function playSound(sound) {
  if (mute == false) {
+   console.log(sound.duration);
    sound.play();
  }
 }

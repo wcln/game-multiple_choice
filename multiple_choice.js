@@ -15,6 +15,7 @@ var mute = false;
 var startTime;
 var endTime;
 var firstClick;
+var correctAnswer;
 
 // Sounds
 var clickSound;
@@ -44,6 +45,7 @@ function init(title) {
   clickSound = new Audio('sounds/click.mp3');
   correctSound = new Audio('sounds/correct.mp3');
   wrongSound = new Audio('sounds/wrong.mp3');
+  alertSound = new Audio('sounds/alert.mp3');
 
   // Initialize arrays to hold some HTML elements.
   optionLabelElements = [];
@@ -90,9 +92,13 @@ function init(title) {
     // Set title.
     document.getElementById("game-title").innerHTML = jsonData.title;
 
+    // Set instructions.
+    document.getElementById("start-text").innerHTML = jsonData.instructions;
+
     // Reset counters and variables. This is needed when game is reset.
     counter = correctCounter = wrongCounter = 0;
     firstClick = true;
+    correctAnswer = false;
 
     // Load the first question.
     loadQuestion();
@@ -111,15 +117,23 @@ function next() {
     // Check that at least one radio button is checked.
     if ($("input[type=radio]:checked").length > 0) {
 
+      // The next click will be the second click.
+      firstClick = false;
+
       // Check if correct.
       let correct = false;
+      let correctRadioElement = null;
       // For each radio button...
+      $("p.feedback").remove();
       for (var radio of optionInputElements) {
-
         // If this radio button is the correct answer.
         if (radio.value === jsonData.questions[counter].answer) {
           // Highlight it.
           radio.parentElement.classList.add("correct");
+
+          // Store the radio element in a variable so that if the user got the question wrong, we can add feedback to it later.
+          correctRadioElement = radio;
+
           // If the correct radio button is checked, the user has chosen the correct answer.
           if (radio.checked) {
             correct = true;
@@ -128,6 +142,10 @@ function next() {
         } else if (radio.checked) {
           // The user has chosen the wrong option.
           radio.parentElement.classList.add("wrong");
+          let givenAnswerTextElement = document.createElement("p");
+          givenAnswerTextElement.innerHTML = "Given Answer";
+          givenAnswerTextElement.classList.add("feedback");
+          radio.parentElement.appendChild(givenAnswerTextElement);
         }
       }
 
@@ -137,31 +155,41 @@ function next() {
         playSound(correctSound);
         // Increment the 'correct' counter.
         correctTextElement.innerHTML = "Correct: " + ++correctCounter;
+        // Used to skip the click sound further down in this function.
+        correctAnswer = true;
+        // Move on to the next question.
+        setTimeout(next, 200);
+
       } else {
         // Play the 'wrong' sound.
         playSound(wrongSound);
         // Increment the 'wrong' counter.
         wrongTextElement.innerHTML = "Wrong: " + ++wrongCounter;
+
+        let correctAnswerTextElement = document.createElement("p");
+        correctAnswerTextElement.innerHTML = "Correct Answer";
+        correctAnswerTextElement.classList.add("feedback");
+        correctRadioElement.parentElement.appendChild(correctAnswerTextElement);
       }
 
-      // The next click will be the second click.
-      firstClick = false;
+      // If the next question is the last question.
+      if (counter === jsonData.questions.length - 1) {
+        // Change the 'Next' button to read 'Finish'.
+        $("#next").html("Finish");
+      } else {
+        // Change 'Submit' button to 'Next'.
+        $("#next").html("Next");
+      }
 
     // An option was not selected.
     } else {
       // Notify the user that an option must be selected.
-      $("#warning").css("display", "block");
-      setTimeout(function() {
-        $("#warning").css("display", "none");
-      }, 2000);
-
+      showWarning();
     }
   } else {
 
     // Clear CSS class on option <div>.
-    $('input[type="radio"]').each(function() {
-      this.parentElement.classList.remove("checked");
-    });
+    clearSelectedDiv();
 
     // Reset correct/incorrect highlights.
     firstClick = true;
@@ -169,18 +197,20 @@ function next() {
       $(this).removeClass("wrong correct");
     })
 
+    // Change 'Next' button to 'Submit'.
+    $("#next").html("Submit");
+
     // Play a click sound.
-    playSound(clickSound);
+    if (!correctAnswer) {
+      playSound(clickSound);
+    }
+    // Reset.
+    correctAnswer = false;
 
     // Load next question.
     counter++;
     if (counter < jsonData.questions.length) {
       loadQuestion();
-      // If the next question is the last question.
-      if (counter === jsonData.questions.length - 1) {
-        // Change the 'Next' button to read 'Finish'.
-        document.getElementById("next").innerHTML = "Finish";
-      }
     } else {
       // Call a function which displays the end game screen.
       endGame();
@@ -198,9 +228,15 @@ function endGame() {
   $("#game-over-row").css("display", "flex");
   $("form").css("visibility", "hidden");
   $("#next").prop("disabled", true);
+  $("#question-counter").css("display", "none");
 
   $("#score-text").html("Score: " + correctCounter + "/" + jsonData.questions.length);
-  $("#total-time").html("Total Time: " + ((new Date().getTime() - startTime)/1000).toFixed(1) + " seconds");
+
+  // Show total quiz time taken.
+  let totalSeconds = Math.floor((new Date().getTime() - startTime)/1000);
+  let totalMinutes = Math.floor(totalSeconds / 60);
+  let leftoverSeconds = totalSeconds % 60;
+  $("#total-time").html("Total Time: " + (totalMinutes == 0? "":totalMinutes + " min") + (leftoverSeconds == 0? "":" " + leftoverSeconds + " sec"));
 }
 
 /*
@@ -212,7 +248,7 @@ function restart() {
   $("#question-row").css("display", "block");
   $("#game-over-row").css("display", "none");
   $("form").css("visibility", "visible");
-  $("#next").html("Next");
+  $("#next").html("Submit");
   $("#wrong").html("Wrong: 0");
   $("#correct").html("Correct: 0");
   $("#next").prop("disabled", false);
@@ -223,14 +259,34 @@ function restart() {
  * Load a question based on the value of the variable 'counter'.
  */
 function loadQuestion() {
+
+  // Ensure no radio is checked when question is initally shown.
+  clearSelectedRadio();
+
+  // Update question counter.
+  $("#question-counter > p").html((counter+1) + "/" + jsonData.questions.length);
+
   // Access question from JSON data.
   let question = jsonData.questions[counter];
 
   // Set question text.
   questionTextElement.innerHTML = question.question;
 
-  // Set question image.
-  questionImageElement.src = "versions/" + versionName + "/" + question.image;
+  // Check if there is an image or only text.
+  if (question.image == null || question.image == "") {
+    // Hide the image <div>.
+    questionImageElement.parentElement.style.display = "none";
+    // Add a class to the question text to center it.
+    questionTextElement.parentElement.classList.remove("col-sm-6");
+    questionTextElement.parentElement.classList.add("col-sm-12", "centered-question");
+  } else {
+    // Set question image.
+    questionImageElement.src = "versions/" + versionName + "/" + question.image;
+    // Remove 'question-centered' class from text <div> and re-display image <div>.
+    questionImageElement.parentElement.style.display = "block";
+    questionTextElement.parentElement.classList.remove("col-sm-12", "centered-question");
+    questionTextElement.parentElement.classList.add("col-sm-6");
+  }
 
   // Set the options (including answer).
   question.options.push({option: question.answer});
@@ -261,10 +317,13 @@ function start() {
   $("#question-row").css("display", "block");
   $("#start-row").css("display", "none");
   $("form").css("visibility", "visible");
-  $("#next").html("Next");
+  $("#next").html("Submit");
   $("#wrong").html("Wrong: 0");
   $("#correct").html("Correct: 0");
   $("#next").prop("disabled", false);
+
+  // Show question counter.
+  $("#question-counter").css("display", "block");
 
   // Start timer.
   startTime = new Date().getTime();
@@ -277,4 +336,27 @@ function clearSelectedDiv() {
   $('input[type="radio"]').each(function() {
     this.parentElement.classList.remove("checked");
   });
+}
+
+/*
+ * Ennsure no radio button is selected when a question is initially shown.
+ */
+function clearSelectedRadio() {
+  $('input[type="radio"]').each(function() {
+    $(this).prop("checked", false);
+  })
+}
+
+/*
+ * Momentarily show the warning <div> at the bottom of the screen.
+ * Hide the question counter <div>.
+ */
+function showWarning() {
+  playSound(alertSound);
+  $("#question-counter").css("display", "none");
+  $("#warning").css("display", "block");
+  setTimeout(function() {
+    $("#warning").css("display", "none");
+    $("#question-counter").css("display", "block");
+  }, 2000);
 }

@@ -30,7 +30,7 @@
 		</div>
 		<div class="row text-center" id="start-row">
 			<div class="col-md-12">
-				<p id="start-text">The following multiple choice quiz will describe a triangle as well as show you a picture. You will need to select the correct type of triangle from the four options.</p>
+				<p id="start-text">The following quiz will ask you several questions. For each question, choose one of the options from the list below. You will be shown the correct answer if you get the wrong answer. Click the 'Start' button below to begin the quiz.</p>
 				<button id="start" onclick="start()">Start</button>
 			</div>
 		</div>
@@ -61,13 +61,16 @@
 			</div>
 		</div>
 		<div class="row" id="bottom-bar">
-			<div id="warning" class="col-md-4">
+			<div id="question-counter" class="col-sm-4">
+				<p>0/0</p>
+			</div>
+			<div id="warning" class="col-sm-4">
 				<p>Select an option!</p>
 			</div>
-			<div class="col-md-8 pull-right text-right">
+			<div class="col-sm-8 pull-right text-right">
 				<p id="correct">Correct: 0</p>
 				<p id="wrong">Wrong: 0</p>
-				<button id="next" onclick="next()">Next</button>
+				<button id="next" onclick="next()">Submit</button>
 			</div>
 		</div>
 	</div>

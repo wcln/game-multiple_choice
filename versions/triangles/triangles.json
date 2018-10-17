@@ -1,5 +1,6 @@
 {
   "title": "Naming Types of Triangles",
+  "instructions": "The following multiple choice quiz will describe a triangle as well as show you a picture. You will need to select the correct type of triangle from the four options.",
   "questions": [
     {
       "question": "This triangle has three equal sides: It is:",
@@ -24,6 +25,22 @@
       "options": [
         {
           "option": "an isosceles triangle"
+        },
+        {
+          "option": "an equilateral triangle"
+        },
+        {
+          "option": "a right-angled triangle"
+        }
+      ]
+    },
+    {
+      "question": "Two sides of this triangle are equal. It is:",
+      "image": null,
+      "answer": "an isosceles triangle",
+      "options": [
+        {
+          "option": "a scalene triangle"
         },
         {
           "option": "an equilateral triangle"
