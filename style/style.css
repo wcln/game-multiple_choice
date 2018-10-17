@@ -101,6 +101,7 @@ button#restart, button#start {
 	float: right;
 	margin-top: .8em;
 	height: 25px;
+	cursor: pointer;
 }
 
 img#logo {
