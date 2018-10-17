@@ -29,13 +29,13 @@
 			</div>
 		</div>
 		<div class="row text-center" id="start-row">
-			<div class="col-md-12">
+			<div class="col-sm-12">
 				<p id="start-text">The following quiz will ask you several questions. For each question, choose one of the options from the list below. You will be shown the correct answer if you get the wrong answer. Click the 'Start' button below to begin the quiz.</p>
 				<button id="start" onclick="start()">Start</button>
 			</div>
 		</div>
 		<div class="row text-center" id="game-over-row">
-			<div class="col-md-12">
+			<div class="col-sm-12">
 				<p id="quiz-complete">Quiz Complete!</p>
 				<p id="score-text">Score: 0/0</p>
 				<p id="total-time">Total Time: 0 seconds</p>
@@ -51,7 +51,7 @@
 			</div>
 		</div>
 		<div class="row">
-			<div class="col-md-12" id="form-div">
+			<div class="col-sm-12" id="form-div">
 				<form action="">
 				  <div class="option"><input type="radio" name="answer" value="1" class="option" id="option1"><label for="option1" class="option"></label></div>
 				  <div class="option"><input type="radio" name="answer" value="2" class="option" id="option2"><label for="option2" class="option"></label></div>
