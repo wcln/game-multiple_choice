@@ -15,7 +15,6 @@ var mute = false;
 var startTime;
 var endTime;
 var firstClick;
-var correctAnswer;
 
 // Sounds
 var clickSound;
@@ -98,7 +97,6 @@ function init(title) {
     // Reset counters and variables. This is needed when game is reset.
     counter = correctCounter = wrongCounter = 0;
     firstClick = true;
-    correctAnswer = false;
 
     // Load the first question.
     loadQuestion();
@@ -155,11 +153,6 @@ function next() {
         playSound(correctSound);
         // Increment the 'correct' counter.
         correctTextElement.innerHTML = "Correct: " + ++correctCounter;
-        // Used to skip the click sound further down in this function.
-        correctAnswer = true;
-        // Move on to the next question.
-        setTimeout(next, 200);
-
       } else {
         // Play the 'wrong' sound.
         playSound(wrongSound);
@@ -200,12 +193,8 @@ function next() {
     // Change 'Next' button to 'Submit'.
     $("#next").html("Submit");
 
-    // Play a click sound.
-    if (!correctAnswer) {
-      playSound(clickSound);
-    }
-    // Reset.
-    correctAnswer = false;
+    // Play the click sound.
+    playSound(clickSound);
 
     // Load next question.
     counter++;
