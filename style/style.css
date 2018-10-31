@@ -64,7 +64,10 @@
   left: 0;
   right: 0;
   margin: auto;
-	padding: 0 1em 0 1em;
+	padding: 1em;
+	margin-right: 1em;
+	background-color: white;
+	border-radius: 10px;
 }
 
 p#correct, p#wrong {
