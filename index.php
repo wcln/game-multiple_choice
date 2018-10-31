@@ -12,7 +12,7 @@
 	<script type="text/javascript" src="multiple_choice.js"></script>
 </head>
 <body onload="init('<?=isset($_GET['title'])?$_GET['title']:null?>');">
-	<div class="container">
+	<div class="container" id="main-container">
 		<div class="row" id="heading-bar">
 			<div class="col-sm-2">
 				<img id="logo" src="images/logo.png">
@@ -26,7 +26,9 @@
 		</div>
 		<div class="row text-center" id="start-row">
 			<div class="col-sm-12">
-				<p id="start-text">The following quiz will ask you several questions. For each question, choose one of the options from the list below. You will be shown the correct answer if you get the wrong answer. Click the 'Start' button below to begin the quiz.</p>
+				<img src="images/start_image.png" height="100px">
+				<p id="start-text"></p>
+				<p id="generic-start-text">The following quiz will ask you several questions. For each question, choose one of the options from the list below. You will be shown the correct answer if you choose the wrong answer. Click the 'Start' button below to begin the quiz.</p>
 				<button id="start" onclick="start()">Start</button>
 			</div>
 		</div>

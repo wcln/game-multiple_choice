@@ -144,6 +144,17 @@ label {
 	margin: 0;
 }
 
+#start-row {
+	background-color: white;
+	border-radius: 10px;
+	border: 1px solid black;
+	box-shadow: 5px 10px rgba(0, 0, 0, 0.35);
+}
+
+#main-container {
+	background-image: url("../images/background.jpg");
+}
+
 #quiz-complete {
 	font-size: 30px;
 	font-weight: 700;
@@ -202,7 +213,7 @@ div.option.checked {
 	margin: 5px 0 0 0;
 }
 
-#start-text {
+#start-text, #generic-start-text {
 	font-size: 18px;
 }
 
