@@ -45,7 +45,7 @@
 				<p id="question-text"></p>
 			</div>
 			<div class="col-sm-6 question">
-				<img id="question-image" src="images/triangle.png">
+				<img id="question-image" src="">
 			</div>
 		</div>
 		<div class="row">

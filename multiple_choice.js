@@ -241,6 +241,7 @@ function restart() {
   $("#wrong").html("Wrong: 0");
   $("#correct").html("Correct: 0");
   $("#next").prop("disabled", false);
+  $("#main-container").css("background-image", 'url("images/background.jpg")');
   init(versionName);
 }
 
@@ -310,6 +311,7 @@ function start() {
   $("#wrong").html("Wrong: 0");
   $("#correct").html("Correct: 0");
   $("#next").prop("disabled", false);
+  $("#main-container").css("background-image", "linear-gradient(to bottom right, white, #a1e2fc)");
 
   // Show question counter.
   $("#question-counter").css("display", "block");
