@@ -1,6 +1,6 @@
 /*
  * HTML5 Multiple Choice Quiz
- * Colin Bernard (www.wcln.ca)
+ * Colin Perepelken (www.wcln.ca)
  * October 2018
  */
 
