@@ -1,0 +1,23 @@
+{"title":"Reflections and Invariant Points","instructions":"Choose the answer that best answers the question. ","questions":[
+
+{"question":"If the red relation is f(x), describe the blue relation.","image":"Q1-2.JPG","answer":"y = -f(x)","options":[{"option":"y = f(-x)"},{"option":"y = f<sup>-1</sup>(x)"},{"option":"y = f(x)<sup>-1</sup>"}]},
+
+{"question":"Identify an invariant point in the transformation shown.","image":"Q1-2.JPG","answer":"none","options":[{"option":"(0,0)"},{"option":"(-2,0)"},{"option":"(0,2)"}]},
+
+{"question":"If the red relation is f(x), describe the blue relation.","image":"Q3-4.JPG","answer":"y = f(-x)","options":[{"option":"y = -f(x)"},{"option":"y = f<sup>-1</sup>(x)"},{"option":"y = f(x)<sup>-1</sup>"}]},
+
+{"question":"Identify an invariant point in the transformation shown.","image":"Q3-4.JPG","answer":"(0,1)","options":[{"option":"(0,0)"},{"option":"(-2,0)"},{"option":"(1,0)"}]},
+
+{"question":"If the red relation is f(x), describe the blue relation.","image":"Q5-6.JPG","answer":"y = f<sup>-1</sup>(x)","options":[{"option":"y = f(-x)"},{"option":"y = -f(x)"},{"option":"y = f(x)<sup>-1</sup>"}]},
+
+{"question":"Identify an invariant point in the transformation shown.","image":"Q5-6.JPG","answer":"none","options":[{"option":"(0,0)"},{"option":"(-2,0)"},{"option":"(0,2)"}]},
+
+{"question":"If the red relation is f(x), describe the blue relation.","image":"Q7-8.JPG","answer":"y = f(-x)","options":[{"option":"x = -f(y)"},{"option":"y = f<sup>-1</sup>(x)"},{"option":"y = f(x)<sup>-1</sup>"}]},
+
+{"question":"Identify an invariant point in the transformation shown.","image":"Q7-8.JPG","answer":"(0,0)","options":[{"option":"none"},{"option":"(-2,0)"},{"option":"(0,2)"}]},
+
+{"question":"If the red relation is f(x), describe the blue relation.","image":"Q9-10.JPG","answer":"y = f<sup>-1</sup>(x)","options":[{"option":"y = f(-x)"},{"option":"y = -f(x)"},{"option":"y = f(x)<sup>-1</sup>"}]},
+
+{"question":"Identify an invariant point in the transformation shown.","image":"Q9-10.JPG","answer":"(1,1)","options":[{"option":"(0,1)"},{"option":"(1,0)"},{"option":"(0,2)"}]}
+
+]}

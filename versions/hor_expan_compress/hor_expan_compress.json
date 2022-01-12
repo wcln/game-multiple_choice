@@ -1,0 +1,19 @@
+{"title":"Horizontal Expansion & Compressions","instructions":"Choose the equation that matches the graph. ","questions":[
+
+{"question":"Which equation best describes this graph?","image":"q1.PNG","answer":"y=(2x)<sup>2</sup>","options":[{"option":"y=(1/2x)<sup>2</sup>"},{"option":"y=x<sup>2</sup>"},{"option":"y=2(x)<sup>2</sup>"}]},
+
+{"question":"Which equation best describes this graph?","image":"q2.PNG","answer":"y=|1/3x|","options":[{"option":"y=|3x|"},{"option":"y=3|x|"},{"option":"y=|1/2x|"}]},
+
+{"question":"Which equation best describes this graph?","image":"q3.PNG","answer":"y=-(1/2x)<sup>2</sup>","options":[{"option":"y=(1/2x)<sup>2</sup>"},{"option":"y=-(2x)<sup>2</sup>"},{"option":"y=-(1/3x)<sup>2</sup>"}]},
+
+{"question":"Which equation best describes this graph?","image":"q4.PNG","answer":"y=-(2x)<sup>0.5</sup>","options":[{"option":"y=(1/2x)<sup>0.5</sup>"},{"option":"y=-(1/2x)<sup>0.5</sup>"},{"option":"y=-(1/3x)<sup>0.5</sup>"}]},
+
+{"question":"Which equation best describes this graph?","image":"q5.PNG","answer":"y=(3x)<sup>0.5</sup>","options":[{"option":"y=(1/3x)<sup>0.5</sup>"},{"option":"y=(2x)<sup>0.5</sup>"},{"option":"y=3(x)<sup>0.5</sup>"}]},
+
+{"question":"Which equation best describes this graph?","image":"q6.PNG","answer":"y=-|2x|","options":[{"option":"y=-|3x|"},{"option":"y=|-2x|"},{"option":"y=-|1/2x|"}]},
+
+{"question":"Which equation best describes this graph?","image":"q7.PNG","answer":"y=(4x)","options":[{"option":"y=(1/4x"},{"option":"y=(3x)"},{"option":"y=(1/3x)"}]},
+
+{"question":"Which equation best describes this graph?","image":"q8.PNG","answer":"y=(1/3x)<sup>0.5</sup>","options":[{"option":"y=(1/2x)<sup>0.5</sup>"},{"option":"y=(3x)<sup>0.5</sup>"},{"option":"y=(2x)<sup>0.5</sup>"}]}
+
+]}

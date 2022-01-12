@@ -1,0 +1,13 @@
+{"title":"Graph Shapes","instructions":"Match the graph to the best description.","questions":[
+
+{"question":"Which best describes graph <strong>A</strong>?","image":"log_graphs.jpg","answer":"y=log<sub>2</sub>x","options":[{"option":"y=log<sub>10</sub>x"},{"option":"y=log<sub><i>e</i></sub>x"},{"option":"y=log<sub>(1/2)</sub>x"}]},
+
+{"question":"Which best describes graph <strong>E</strong>?","image":"log_graphs.jpg","answer":"y=log<sub>(1/2)</sub>x","options":[{"option":"y=log<sub>(1/10)</sub>x"},{"option":"y=lnx"},{"option":"y=log<sub>(1/5)</sub>x"}]},
+
+{"question":"Which best describes graph <strong>C</strong>?","image":"log_graphs.jpg","answer":"y=logx","options":[{"option":"y=log<sub>5</sub>x"},{"option":"y=log<sub><i>e</i></sub>x"},{"option":"y=log<sub>(1/2)</sub>x"}]},
+
+{"question":"Which best describes graph <strong>D</strong>?","image":"log_graphs.jpg","answer":"y=log<sub>(1/10)</sub>x","options":[{"option":"y=logx"},{"option":"y=log<sub><i>e</i></sub>x"},{"option":"y=log<sub>(1/2)</sub>x"}]},
+
+{"question":"Which best describes graph <strong>B</strong>?","image":"log_graphs.jpg","answer":"y=lnx","options":[{"option":"y=logx"},{"option":"y=log<sub>2</sub>x"},{"option":"y=log<sub>(1/2)</sub>x"}]}
+
+]}

@@ -1,0 +1,19 @@
+{"title":"Combined Transformations","instructions":"Choose the equation that matches the graph. ","questions":[
+
+{"question":"Which equation best describes this graph?","image":"q1.PNG","answer":"y=2(x+1)<sup>2</sup>-2","options":[{"option":"y=1/2(x+1)<sup>2</sup>-2"},{"option":"y=2(x-1)<sup>2</sup>-2"},{"option":"y=1/2(x-1)<sup>2</sup>-2"}]},
+
+{"question":"Which equation best describes this graph?","image":"q2.PNG","answer":"y=3|x-1|","options":[{"option":"y=1/3|x-1|"},{"option":"3y=|x+1|"},{"option":"y=3|x+1|"}]},
+
+{"question":"Which equation best describes this graph?","image":"q3.PNG","answer":"y=(1/2x)<sup>3</sup>-1","options":[{"option":"y=(1/2x+1)<sup>3</sup>"},{"option":"y=1/2x<sup>3</sup>-1"},{"option":"y=2x<sup>3</sup>-1"}]},
+
+{"question":"Which equation best describes this graph?","image":"q4.PNG","answer":"y=3(x-1)<sup>0.5</sup>","options":[{"option":"y=1/3(x-1)<sup>0.5</sup>"},{"option":"y=3(x+1)<sup>0.5</sup>"},{"option":"y=1/3(x+1)<sup>0.5</sup>"}]},
+
+{"question":"Which equation best describes this graph?","image":"q5.PNG","answer":"y=-2(x+1)<sup>3</sup>+1","options":[{"option":"y=-1/2(x+1)<sup>3</sup>+1"},{"option":"y=-2(x-1)<sup>3</sup>+1"},{"option":"y=-1/2(x-1)<sup>3</sup>+1"}]},
+
+{"question":"Which equation best describes this graph?","image":"q6.PNG","answer":"y=|2x|+1","options":[{"option":"y=|1/2x|+1"},{"option":"y=|2x+1|"},{"option":"y=|1/2x+1|"}]},
+
+{"question":"Which equation best describes this graph?","image":"q7.PNG","answer":"y=-2x+1","options":[{"option":"y=2x+1"},{"option":"y=-1/2x+1"},{"option":"y=1/2x+1"}]},
+
+{"question":"Which equation best describes this graph?","image":"q8.PNG","answer":"y=-(1/2x)<sup>0.5</sup>+1","options":[{"option":"y=(1/2x)<sup>0.5</sup>"},{"option":"y=-(2x)<sup>0.5</sup>+1"},{"option":"y=(2x)<sup>0.5</sup>"}]}
+
+]}

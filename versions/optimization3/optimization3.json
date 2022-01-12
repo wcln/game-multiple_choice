@@ -1,0 +1,11 @@
+{"title":"Linear Optimization3 - Object Equations","instructions":"Answer these optimization-related problems.","questions":
+[
+{"question":"If the objective equation is  Area = 3x + 2y, then what is the area at point C?","image":"optimization3a.PNG","answer":"0 square meters","options":[{"option":"5 square meters"},{"option":"7 square meters"},{"option":"none of these"}]},
+
+{"question":"If the objective equation is  Profit = 3x + 2y, then what is the profit at point A?","image":"optimization3a.PNG","answer":"Who cares - it's outside of the allowable region.","options":[{"option":"$9"},{"option":"$15"},{"option":"$20"}]},
+
+{"question":"If the objective equation is  Area = 3x + 2y, then what is the area at point E?","image":"optimization3a.PNG","answer":"16 square meters","options":[{"option":"14 square meters"},{"option":"7 square meters"},{"option":"none of these"}]},
+
+{"question":"If the objective equation is  Profit = 3x + 2y, then what is the profit at point D?","image":"optimization3a.PNG","answer":"$10","options":[{"option":"$9"},{"option":"$15"},{"option":"Who cares - it's outside of the allowable region."}]},
+
+{"question":"If the objective equation is  Area = 3x + 2y, then what is the area at point F?","image":"optimization3a.PNG","answer":"18 square meters","options":[{"option":"14 square meters"},{"option":"16 square meters"},{"option":"none of these"}]}]}

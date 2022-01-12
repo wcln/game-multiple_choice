@@ -1,0 +1,19 @@
+{"title":"Linear Optimization1 - DESMOS & Vertices","instructions":"Answer these optimization-related problems.","questions":
+[
+{"question":"What can you conclude about location (4,2)?","image":"optimization1a.PNG","answer":"It is one of the vertices.","options":[{"option":"It is not one of the vertices, but in allowable region."},{"option":"It is outside the allowable region."},{"option":"none of these"}]},
+
+{"question":"What can you conclude about location (8,0)?","image":"optimization1a.PNG","answer":"It is outside the allowable region.","options":[{"option":"It is not one of the vertices, but in allowable region."},{"option":"It is one of the vertices."},{"option":"none of these"}]},
+
+{"question":"What can you conclude about location (2,2)?","image":"optimization1a.PNG","answer":"It is not one of the vertices, but in allowable region.","options":[{"option":"It is one of the vertices."},{"option":"It is outside the allowable region."},{"option":"none of these"}]},
+
+{"question":"What can you conclude about location (0,4)?","image":"optimization1a.PNG","answer":"It is one of the vertices.","options":[{"option":"It is not one of the vertices, but in allowable region."},{"option":"It is outside the allowable region."},{"option":"none of these"}]},
+
+{"question":"What can you conclude about location (5,3)?","image":"optimization1a.PNG","answer":"It is outside the allowable region.","options":[{"option":"It is not one of the vertices, but in allowable region."},{"option":"It is one of the vertices."},{"option":"none of these"}]},
+
+{"question":"What can you conclude about location (2,3)?","image":"optimization1a.PNG","answer":"It is not one of the vertices, but in allowable region.","options":[{"option":"It is one of the vertices."},{"option":"It is outside the allowable region."},{"option":"none of these"}]},
+
+{"question":"What can you conclude about location (0,6)?","image":"optimization1a.PNG","answer":"It is outside the allowable region.","options":[{"option":"It is not one of the vertices, but in allowable region."},{"option":"It is one of the vertices."},{"option":"none of these"}]},
+
+{"question":"What can you conclude about location (0,0)?","image":"optimization1a.PNG","answer":"It is one of the vertices.","options":[{"option":"It is not one of the vertices, but in allowable region."},{"option":"It is outside the allowable region."},{"option":"none of these"}]},
+
+{"question":"What can you conclude about location (2,-2)?","image":"optimization1a.PNG","answer":"It is outside the allowable region.","options":[{"option":"It is not one of the vertices, but in allowable region."},{"option":"It is one of the vertices."},{"option":"none of these"}]}]}

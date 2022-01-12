@@ -1,0 +1,19 @@
+{"title":"Vertical Expansions & Compressions","instructions":"Choose the equation that matches the graph. ","questions":[
+
+{"question":"Which equation best describes this graph?","image":"q1.PNG","answer":"y=2x<sup>2</sup>","options":[{"option":"y=&#189;x<sup>2</sup>"},{"option":"y=(2x)<sup>2</sup>"},{"option":"y=4(x)<sup>2</sup>"}]},
+
+{"question":"Which equation best describes this graph?","image":"q2.PNG","answer":"y=&#8531;|x|","options":[{"option":"y=3|x|"},{"option":"y=2|x|"},{"option":"y=&#189;|x|"}]},
+
+{"question":"Which equation best describes this graph?","image":"q3.PNG","answer":"y=-&#189;x<sup>2</sup>","options":[{"option":"y=&#189;x<sup>2</sup>"},{"option":"y=-2x<sup>2</sup>"},{"option":"y=-&#8531;x<sup>2</sup>"}]},
+
+{"question":"Which equation best describes this graph?","image":"q4.PNG","answer":"y=2x<sup>3</sup>","options":[{"option":"y=&#189;x<sup>3</sup>"},{"option":"y=3x<sup>3</sup>"},{"option":"y=&#8531;x<sup>3</sup>"}]},
+
+{"question":"Which equation best describes this graph?","image":"q5.PNG","answer":"y=3&#8730;x","options":[{"option":"y=&#8531;&#8730;x"},{"option":"y=&#8730;(3x)"},{"option":"y=2&#8730;x"}]},
+
+{"question":"Which equation best describes this graph?","image":"q6.PNG","answer":"y=-2|x|","options":[{"option":"y=-3|x|"},{"option":"y=|-2x|"},{"option":"y=-&#189;|x|"}]},
+
+{"question":"Which equation best describes this graph?","image":"q7.PNG","answer":"y=4x","options":[{"option":"y=&#188;x"},{"option":"y=3x"},{"option":"y=&#8531;x"}]},
+
+{"question":"Which equation best describes this graph?","image":"q8.PNG","answer":"y=-&#8539;x<sup>3</sup>","options":[{"option":"y=-&#189x<sup>3</sup>"},{"option":"y=&#8531;x<sup>3</sup>"},{"option":"y=2x<sup>3</sup>"}]}
+
+]}
